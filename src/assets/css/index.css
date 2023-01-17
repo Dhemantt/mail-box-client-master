@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.link {
+    text-decoration: none !important;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.pos-fixed {
+    position: fixed;
+    width: auto;
+}
+
+.pos-fixed.top {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.loginPageOuterContainer {
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, #262528b9 0%, #161517e6 100%);
+    z-index: 999;
+}
+
+.modalBody {
+    margin-top: 50px;
+    z-index: 100;
+    min-width: 300px;
+    max-width: 75%;
+    padding: 1rem;
+    position: fixed;
+    top: 100px
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+.input-control.fieldError>label {
+    margin: 0 !important;
+    animation: fadeIn 0.2s ease-in-out forwards 0.25s;
+}
+
+.input-control.fieldError>.form-control {
+    transition: all 0.25s ease-in-out;
+    border: 1px solid #de1f8f !important;
+}
+
+
+.pagenotfound {
+    position: relative;
+    overflow: hidden;
+}
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mailsContainer {
+    margin-top: 4rem;
+}
+
+.mail-item {
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: #8e95b51b;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.mail-item:hover {
+    background-color: #8b67c248;
+}
+
+.mailContent>* {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.sidebar .sidemenu {
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 9px 1px 5px -1px rgba(0, 0, 0, 0.039);
+    padding: 0 1rem;
+}
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: center;
+    gap: 0
+        /* align-items: center; */
+}
+
+.main-section.block {
+    display: block;
+}
+
+.sidebar .sidemenu>.sideNavLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .5rem;
+    text-decoration: none !important;
+    color: rgb(78, 74, 74);
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    font-weight: bold;
+    background-color: #d2ced7;
+    border-bottom: 1px solid #ffffff3b;
+    transition: all 0.25s ease-in;
+}
+
+.sidebar .sidemenu>.sideNavLink:hover {
+    background-color: #e7127d;
+    color: #f9f5fb;
+}
+.sideNavLink.active{
+    background-color: #e7127d !important;
+    color: #f9f5fb !important; 
+}
+.mails-empty-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.mailEditor {
+    max-width: 100%;
+}
+
+.ProseMirror {
+    padding: 10px;
+    color: #363232;
+    border: 1px solid #85878a5a;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.ProseMirror:focus {
+    border: none;
+    outline: 1px solid #b2b9c3;
+}
+
+.ProseMirror>*+* {
+    margin-top: 0.75em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+    padding: 0 2rem;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+    line-height: 1.1;
+}
+
+.ProseMirror code {
+    background-color: #bec6cf;
+    color: #fff;
+}
+
+.ProseMirror pre {
+    background: #4e4848;
+    color: #fff;
+    font-family: "JetBrainsMono", monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.ProseMirror code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+}
+
+.ProseMirror blockquote {
+    padding-left: 1rem;
+    border-left: 3px solid #999999;
+}
+
+.ProseMirror hr {
+    border: none;
+    border-top: 3px solid #999999;
+    margin: 2rem 0;
+}
+
+.ProseMirror ul {
+    list-style: circle;
+
+}
+
+.ProseMirror ul li::before {
+    content: "\2022";
+    position: absolute;
+    left: 20px;
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #181616;
+}
+
+/* ............................ */
+.textEditor {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 5px solid grey;
+}
+
+
+
+.menuBar {
+    background-color: #5f5d621e;
+    max-width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    /* justify-content: center; */
+}
+
+.menuBar button {
+    font-size: 10px;
+    width: max-content;
+    padding: 0.25rem;
+    outline: none;
+    border: 2px solid #504a5068;
+    background: none;
+    color: #585353;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading3 {
+    font-size: 15px;
+}
+
+button.is-active {
+    background: #313032;
+    color: #fff;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0;
+    }
+}

@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyBzHa1-HbLPigZJ9wwd6jNXpt4pK2Mq6D0";
-const DB_URL = 'https://mailboxclient-bef4f-default-rtdb.firebaseio.com/'
+const API_KEY = "AIzaSyDJpog1ouRan1x4uGj7QqDMxMgyHoV1ZbQ";
+const DB_URL = 'https://mailbox-client-71586-default-rtdb.firebaseio.com/'
 
 export { DB_URL, API_KEY}
